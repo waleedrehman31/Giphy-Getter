@@ -1,4 +1,4 @@
-const api_key = 'j1CoFEkcNgLSBNgJyRQv91MRYxmMvajz';
+const api_key = proccess.env.API_KEY;
 const api_URL = `https://api.giphy.com/v1/gifs/random?api_key=${api_key}&rating=g`;
 const main = document.getElementById('main');
 const btn = document.getElementById('btn');
