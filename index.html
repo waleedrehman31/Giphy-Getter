@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Randome Gif</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <style>
+        .margin {
+            margin: 1rem;
+        }
+        .color {
+            color: white;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    <nav class="navbar is-dark block" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item margin" href="#">
+            <h1 class="title color ">
+                Randome Giphy
+            </h1> 
+          </a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="notification is-success block" id="notification">
+            <button class="delete" id="delete-btn"></button>
+            <strong>Success</strong>
+        </div>
+
+        <center class="block">
+            <button class="button is-medium is-primary " id="btn">Get Randome GIF</button>
+        </center>
+
+        <div class="block">
+            <progress class="progress is-medium is-dark" max="100" id="loading">45%</progress>
+        </div>
+
+        <div class="card">
+            <div class="card-image">
+                <figure class="image is-16by9 block" id="main">            
+                </figure>
+            </div>
+          </div>
+        
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
